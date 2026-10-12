@@ -1,0 +1,3 @@
+import {defineConfig} from '@playwright/test';
+// Software WebGL and cold file loading can exceed 15 s while COMSOL is running.
+export default defineConfig({testDir:'tests/ui',timeout:120000,workers:1,expect:{timeout:45000},use:{baseURL:'http://127.0.0.1:5179',channel:process.env.PLAYWRIGHT_CHANNEL || undefined,headless:true,viewport:{width:1500,height:1000},launchOptions:{args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']},trace:'retain-on-failure'},reporter:[['list'],['json',{outputFile:'validation/etapa_II/ui-results.json'}]],webServer:{command:'npm run preview',url:'http://127.0.0.1:5179',reuseExistingServer:true,timeout:60000}});

@@ -1,0 +1,9 @@
+{
+  "integration_feature": "IntLine",
+  "frame_properties": {},
+  "states": 345,
+  "length_min_mm": 150.9999999999999,
+  "length_max_mm": 150.9999999999999,
+  "undeformed_length_mm": 151,
+  "reference_measure_verified": true
+}

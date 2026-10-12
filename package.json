@@ -1,0 +1,45 @@
+{
+  "name": "concrete-lab-3d",
+  "productName": "CONCRETE LAB 3D",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "main": "desktop/main.cjs",
+  "description": "Laboratorio virtual de resultados COMSOL verificados",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "desktop": "electron .",
+    "package:windows": "npm run build && node scripts/package-windows.mjs",
+    "test": "node --test tests/*.test.*",
+    "test:ui": "playwright test",
+    "test:native": "node scripts/check-native-root.mjs && node --test tests/science.test.ts"
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "three": "0.186.1",
+    "echarts": "6.1.0",
+    "jspdf": "4.2.1",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.186.0",
+    "@types/node": "^24.0.0",
+    "electron": "44.7.0",
+    "@electron/packager": "20.3.0",
+    "@playwright/test": "1.64.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frankrac123/visualizador-de-comsol-de-ensayos-vigueta.git"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

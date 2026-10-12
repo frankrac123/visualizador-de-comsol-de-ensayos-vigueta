@@ -1,0 +1,8 @@
+* text=auto
+public/data/** binary
+comsol/resultados_referencia/resultados.json binary
+comsol/resultados_referencia/serie_global.csv binary
+*.bin binary
+*.png binary
+*.pdf binary
+*.bat text eol=crlf
