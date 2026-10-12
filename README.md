@@ -1,5 +1,7 @@
 # CONCRETE LAB 3D
 
+[![Pruebas y compilación](https://github.com/frankrac123/visualizador-de-comsol-de-ensayos-vigueta/actions/workflows/ci.yml/badge.svg)](https://github.com/frankrac123/visualizador-de-comsol-de-ensayos-vigueta/actions/workflows/ci.yml)
+
 **Visualizador interactivo de un ensayo de flexión de una vigueta de concreto simple, calculado en COMSOL.**
 
 Explora esfuerzos, deformaciones, flecha, daño y apertura de una interfaz de fractura. Compara dos modelos físicos y exporta gráficas, tablas e informes.

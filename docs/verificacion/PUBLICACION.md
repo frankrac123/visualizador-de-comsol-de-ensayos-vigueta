@@ -11,4 +11,6 @@
 - PDF: informe original de ocho páginas, sin ruta personal del equipo.
 - ZIP público: CRC correcto; sus 73 archivos del runtime permanecen byte por byte iguales al paquete previamente probado. Se retiraron rutas personales del log de pruebas incluido; esta copia tiene un SHA-256 de ZIP distinto, documentado en la descarga.
 
-No se repitieron las simulaciones FEM completas por reorganizar carpetas. Los resultados corresponden a la entrega original, cuyas cinco pruebas UI y prueba del ejecutable se documentan en el informe. La ejecución automática de CI en GitHub comprobará de forma independiente la instalación, los datos portables y la compilación.
+No se repitieron las simulaciones FEM completas por reorganizar carpetas. Los resultados corresponden a la entrega original, cuyas cinco pruebas UI y prueba del ejecutable se documentan en el informe.
+
+La [ejecución automática de CI en GitHub](https://github.com/frankrac123/visualizador-de-comsol-de-ensayos-vigueta/actions/runs/38303010605) terminó correctamente: comprobó de forma independiente la instalación de dependencias en Linux, los datos portables y la compilación.
